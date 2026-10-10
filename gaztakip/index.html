@@ -3,25 +3,77 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gaz Takip</title>
-<meta name="description" content="Gaz Takip: doğalgaz sayacınızı kamerayla okutun, tüketiminizi ve tahmini faturanızı ay bitmeden görün.">
+<title>Gaz Takip · Doğalgaz faturanızı önceden görün</title>
+<meta name="description" content="Gaz Takip: doğalgaz sayacınızı kamerayla okutun, tüketiminizi ve tahmini faturanızı ay bitmeden görün, kademeyi aşmadan tasarruf edin.">
 <link rel="icon" href="/assets/simge.png">
+<link rel="preload" href="/assets/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/style.css">
 <script src="/assets/eposta.js" defer></script>
 </head>
 <body>
-<header class="top"><a class="crumb" href="/">Mertcan Sezginer · Uygulamalar</a></header>
-<main>
+<header class="wrap top">
+  <a class="brand" href="/"><span class="monogram" aria-hidden="true">MS</span><span class="name">Mertcan Sezginer</span></a>
+  <nav class="nav" aria-label="Gaz Takip">
+    <a href="/gaztakip/" aria-current="page">Gaz Takip</a>
+    <a href="/gaztakip/gizlilik/">Gizlilik</a>
+    <a href="/gaztakip/kosullar/">Koşullar</a>
+  </nav>
+</header>
+
+<main class="wrap">
   <section class="hero">
-    <img src="/assets/simge.png" alt="Gaz Takip simgesi">
-    <h1>Gaz Takip</h1>
-    <p>Doğalgaz sayacınızı kamerayla okutun; tüketiminizi ve tahmini faturanızı ay bitmeden görün.</p>
+    <div>
+      <img class="icon" src="/assets/simge.png" alt="Gaz Takip simgesi">
+      <h1>Gaz Takip</h1>
+      <p class="lead">Doğalgaz sayacınızı kamerayla okutun; tüketiminizi ve faturanızın tahmini tutarını ay bitmeden görün.</p>
+      <!-- At launch, swap "Yakında Google Play'de" for the Play link (docs/store/yayin-kontrol-listesi.md). -->
+      <ul class="pills">
+        <li>Android</li>
+        <li>Ücretsiz</li>
+        <li>Üyelik yok</li>
+        <li class="soon">Yakında Google Play'de</li>
+      </ul>
+      <div class="buttons">
+        <a class="button primary" href="#ekranlar">Ekranlara göz atın</a>
+        <a class="button eposta" data-k="pikatzag" data-a="moc.liamg" data-label="1">İletişim</a>
+      </div>
+    </div>
+    <img class="phone" src="/assets/gaztakip/telefon.webp" width="600" height="1268"
+         alt="Gaz Takip ana sayfası: Ekim faturası tahmini, kademe durumu ve günlük tüketim">
   </section>
 
-  <div class="cards">
-    <div class="card"><h3>Kamerayla okuma</h3><p>Endeksi yazmanıza gerek yok; kamera okur, siz onaylarsınız.</p></div>
-    <div class="card"><h3>Ay bitmeden tahmin</h3><p>Bu ayın ve önümüzdeki ayların yaklaşık faturası, kademe takibi.</p></div>
-    <div class="card"><h3>Verileriniz sizde</h3><p>Üyelik yok. Okumalarınız telefonunuzda kalır.</p></div>
+  <p class="eyebrow">Neler yapar</p>
+  <div class="features">
+    <div class="feature">
+      <div class="symbol"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 9a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm8-3h-3.2l-1.2-1.6A1 1 0 0 0 14.8 4H9.2a1 1 0 0 0-.8.4L7.2 6H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-8 12a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11Z"/></svg></div>
+      <h3>Kamerayla okuma</h3>
+      <p>Endeksi yazmanıza gerek yok. Kamera saniyeler içinde okur, siz onaylarsınız.</p>
+    </div>
+    <div class="feature">
+      <div class="symbol"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 20a1 1 0 0 1-1-1v-6a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1Zm5 0a1 1 0 0 1-1-1V9a1 1 0 1 1 2 0v10a1 1 0 0 1-1 1Zm5 0a1 1 0 0 1-1-1v-4a1 1 0 1 1 2 0v4a1 1 0 0 1-1 1Zm5 0a1 1 0 0 1-1-1V5a1 1 0 1 1 2 0v14a1 1 0 0 1-1 1Z"/></svg></div>
+      <h3>Ay bitmeden tahmin</h3>
+      <p>Bu ay ne kadar kullandığınızı ve faturanın yaklaşık ne tutacağını görün.</p>
+    </div>
+    <div class="feature">
+      <div class="symbol"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9Zm1 14.9V19h-2v-1.1a3.5 3.5 0 0 1-2.9-3.2h2a1.6 1.6 0 0 0 1.8 1.4c1 0 1.6-.5 1.6-1.2s-.6-1-2-1.4c-1.9-.5-3.1-1.2-3.1-2.9a2.9 2.9 0 0 1 2.6-2.8V6.6h2v1.2a3.1 3.1 0 0 1 2.6 2.9h-2a1.3 1.3 0 0 0-1.5-1.1c-.9 0-1.4.4-1.4 1s.6.9 1.9 1.3c2 .5 3.2 1.3 3.2 3a3 3 0 0 1-2.8 3Z"/></svg></div>
+      <h3>Kademe takibiyle tasarruf</h3>
+      <p>1. kademe sınırını aşacaksanız önceden görün, günlük sınırınızı bilin.</p>
+    </div>
+    <div class="feature">
+      <div class="symbol"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3Z"/></svg></div>
+      <h3>Verileriniz sizde</h3>
+      <p>Üyelik gerekmez. Okumalarınız telefonunuzda kalır, geliştiriciye gönderilmez.</p>
+    </div>
+  </div>
+
+  <p class="eyebrow" id="ekranlar">Ekranlar</p>
+  <div class="shots" tabindex="0" aria-label="Gaz Takip ekran görüntüleri">
+    <img src="/assets/gaztakip/ekran-1.webp" width="540" height="960" loading="lazy" alt="Kamera sayacın endeksini okuyor">
+    <img src="/assets/gaztakip/ekran-2.webp" width="540" height="960" loading="lazy" alt="Ay bitmeden fatura tahmini">
+    <img src="/assets/gaztakip/ekran-3.webp" width="540" height="960" loading="lazy" alt="Gün gün tüketim ve kademe sınırı">
+    <img src="/assets/gaztakip/ekran-4.webp" width="540" height="960" loading="lazy" alt="Önümüzdeki ayların tahmini faturası">
+    <img src="/assets/gaztakip/ekran-5.webp" width="540" height="960" loading="lazy" alt="Bütün okumalar ve her ayın tüketimi">
+    <img src="/assets/gaztakip/ekran-6.webp" width="540" height="960" loading="lazy" alt="Üyeliksiz başlangıç ekranı">
   </div>
 
   <div class="note">
@@ -30,15 +82,11 @@
     işbirliği veya bağlantısı yoktur. Gösterilen tutar ve tüketimler bilgi amaçlı tahminlerdir, bağlayıcı
     değildir ve resmî faturanın yerine geçmez.</p>
   </div>
-
-  <div class="links">
-    <a href="/gaztakip/gizlilik/">Gizlilik politikası</a>
-    <a href="/gaztakip/kosullar/">Kullanım koşulları</a>
-    <a class="eposta" data-k="pikatzag" data-a="moc.liamg" data-label="1">İletişim</a>
-  </div>
 </main>
-<footer>
+
+<footer class="wrap">
   <p>Gaz Takip · Geliştirici: <a href="/">Mertcan Sezginer</a> · <a class="eposta" data-k="pikatzag" data-a="moc.liamg">gaztakip [at] gmail.com</a></p>
+  <p><a href="/gaztakip/gizlilik/">Gizlilik politikası</a> · <a href="/gaztakip/kosullar/">Kullanım koşulları</a></p>
 </footer>
 </body>
 </html>

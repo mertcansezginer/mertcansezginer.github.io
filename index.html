@@ -4,35 +4,45 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mertcan Sezginer · Uygulamalar</title>
-<meta name="description" content="Mertcan Sezginer'in Android uygulamaları: Gaz Takip ve diğerleri. Her uygulamanın sayfası, gizlilik politikası ve kullanım koşulları.">
+<meta name="description" content="Mertcan Sezginer'in Android uygulamaları. Her uygulamanın tanıtımı, gizlilik politikası ve kullanım koşulları.">
 <link rel="icon" href="/assets/simge.png">
+<link rel="preload" href="/assets/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<main>
-  <section class="dev">
-    <h1>Mertcan Sezginer</h1>
-    <p>Günlük hayatı kolaylaştıran sade Android uygulamaları.</p>
+<header class="wrap top">
+  <a class="brand" href="/"><span class="monogram" aria-hidden="true">MS</span><span class="name">Mertcan Sezginer</span></a>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <h1>Günlük hayatı kolaylaştıran sade uygulamalar</h1>
+    <p class="lead">Android için, gereksiz ayarı ve üyeliği olmayan, işini iyi yapan uygulamalar geliştiriyorum.</p>
   </section>
 
-  <!-- One .app per application: its icon, name, a sentence, and its own pages under /<app>/. -->
+  <p class="eyebrow">Uygulamalar</p>
+  <!-- One .app-card per application; its pages live under /<app>/. -->
   <div class="apps">
-    <article class="app">
-      <img src="/assets/simge.png" alt="Gaz Takip simgesi">
-      <div>
-        <h2><a href="/gaztakip/">Gaz Takip</a></h2>
-        <p>Doğalgaz sayacınızı kamerayla okutun, faturanızı ay bitmeden tahmin edin.</p>
-        <div class="links">
-          <a href="/gaztakip/">Uygulama sayfası</a>
-          <a href="/gaztakip/gizlilik/">Gizlilik</a>
-          <a href="/gaztakip/kosullar/">Koşullar</a>
+    <article class="app-card">
+      <div class="head">
+        <img src="/assets/simge.png" alt="">
+        <div>
+          <h3><a href="/gaztakip/">Gaz Takip</a></h3>
+          <p class="kind">Android · Ücretsiz</p>
         </div>
+      </div>
+      <p class="what">Doğalgaz sayacınızı kamerayla okutun, faturanızı ay bitmeden tahmin edin, kademeyi aşmadan tasarruf edin.</p>
+      <div class="more">
+        <a href="/gaztakip/gizlilik/">Gizlilik</a>
+        <a href="/gaztakip/kosullar/">Koşullar</a>
       </div>
     </article>
   </div>
 </main>
-<footer>
-  <p>© 2026 Mertcan Sezginer. Her uygulamanın iletişim adresi kendi sayfasında yer alır.</p>
+
+<footer class="wrap">
+  <p>© 2026 Mertcan Sezginer</p>
+  <p>Uygulamalarla ilgili sorular için her uygulamanın kendi sayfasındaki iletişim adresini kullanabilirsiniz.</p>
 </footer>
 </body>
 </html>
