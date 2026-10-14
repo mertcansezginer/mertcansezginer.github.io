@@ -21,7 +21,7 @@
 </header>
 <main class="wrap reading legal">
   <h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-  <p class="meta">Yürürlük tarihi: 9 Ekim 2026 · Uygulama: Gaz Takip (Android, <code>tr.com.gaztakip</code>)</p>
+  <p class="meta">Yürürlük tarihi: 14 Ekim 2026 · Uygulama: Gaz Takip (Android, <code>tr.com.gaztakip</code>)</p>
   <p class="meta">Geliştirici ve veri sorumlusu: Mertcan Sezginer · İletişim:
     <a class="eposta" data-k="pikatzag" data-a="moc.liamg">gaztakip [at] gmail.com</a></p>
 
@@ -41,6 +41,8 @@
     <li>Uygulamadaki Google reklamlarının (AdMob) reklamı göstermek ve saymak için kullandığı bilgiler. Reklamlar
     kişiselleştirilmez; okumalarınız ve konumunuz reklamlarla paylaşılmaz.</li>
     <li>Açıksa, telefonunuzun kendi Google hesabınıza yaptığı yedek.</li>
+    <li>"Geri bildirim gönderin" ile geliştiriciye e-posta yazarsanız, kendi e-posta uygulamanızdan gönderdiğiniz
+    e-posta.</li>
   </ul>
 
   <h2>Hangi bilgiler işlenir, nerede kalır?</h2>
@@ -51,11 +53,14 @@
     <tr><td data-label="Bilgi">Sayaç adı, hane düzeni, seçtiğiniz il ve ilçe, kendi girdiğiniz birim fiyat</td><td data-label="Ne için">Hesapların doğru yapılması</td><td data-label="Nerede">Yalnız telefonunuzda</td></tr>
     <tr><td data-label="Bilgi">Kamera görüntüsü</td><td data-label="Ne için">Sayaç rakamlarını okumak</td><td data-label="Nerede">Görüntü telefonda işlenir (Google ML Kit, cihaz üstü). Onayladığınız okumanın sayaç penceresi fotoğrafı telefonda saklanır; hiçbir yere gönderilmez.</td></tr>
     <tr><td data-label="Bilgi">Yaklaşık konum</td><td data-label="Ne için">İl ve ilçeyi bulmak (yalnız siz istediğinizde)</td><td data-label="Nerede">Google Play Hizmetleri konum servisiyle telefonda alınır; il ve ilçe adını bulmak için Google'ın adres servisine (Android Geocoder) gönderilir. Uygulama konumu saklamaz; yalnız seçilen il ve ilçeyi saklar.</td></tr>
-    <tr><td data-label="Bilgi">Hatırlatma zamanlaması</td><td data-label="Ne için">Ara sıra okuma hatırlatması</td><td data-label="Nerede">Telefonda; bildirimler telefonda planlanır, hiçbir yere veri gönderilmez.</td></tr>
+    <tr><td data-label="Bilgi">Hatırlatma zamanlaması</td><td data-label="Ne için">Okuma hatırlatmaları (akşam saatlerinde)</td><td data-label="Nerede">Telefonda; bildirimler telefonda planlanır, hiçbir yere veri gönderilmez.</td></tr>
+    <tr><td data-label="Bilgi">Ana ekran widget'ı: bu ayın tahmini ve son okumanın zamanı</td><td data-label="Ne için">Uygulamayı açmadan görmek</td><td data-label="Nerede">Telefonda; widget eklerseniz ana ekranınızda görünür, hiçbir yere gönderilmez.</td></tr>
+    <tr><td data-label="Bilgi">Geri bildirim e-postası: e-posta adresiniz, yazdıklarınız, uygulama sürümü, Android sürümü ve telefon modeli</td><td data-label="Ne için">Sorunuza ya da önerinize yanıt vermek</td><td data-label="Nerede">Yalnız siz Ayarlar → Destek → "Geri bildirim gönderin"e dokunup e-postayı kendi e-posta uygulamanızdan gönderirseniz geliştiricinin Gmail adresine gider. Sürüm ve telefon bilgisi taslakta açıkça yazar; göndermeden silebilirsiniz.</td></tr>
     <tr><td data-label="Bilgi">Reklam kimliği, uygulama grubu kimliği (app set ID), IP adresi, cihaz ve performans bilgisi, reklamla etkileşim (gösterim, dokunma)</td><td data-label="Ne için">Reklamları göstermek, saymak ve sahtekârlığı önlemek</td><td data-label="Nerede">Google AdMob tarafından şifreli bağlantıyla Google'a gönderilir. Reklamlar kişiselleştirilmez. Reklam kimliğinizi telefonunuzun Ayarlar → Gizlilik → Reklamlar bölümünden silebilir ya da sıfırlayabilirsiniz.</td></tr>
   </table>
   </div>
   <p>Uygulama adınızı, telefon numaranızı, e-posta adresinizi ya da açık adresinizi istemez ve toplamaz.
+  Geliştiriciye kendiniz e-posta yazarsanız adresiniz yalnız size yanıt vermek için kullanılır.
   Uygulamanın kendine ait bir analiz ya da izleme aracı yoktur.</p>
 
   <h2>Yedekleme</h2>
@@ -89,32 +94,38 @@
     İsviçre'deki kullanıcılara reklam onay formunu gösterir; seçiminizi Ayarlar → Reklam tercihleri'nden
     değiştirebilirsiniz.</li>
     <li><strong>Google Play:</strong> Uygulamanın çökme ve performans raporları, telefonunuzda izin verdiyseniz
-    Google Play tarafından toplanır ve geliştiriciye kimliğiniz olmadan gösterilir.</li>
+    Google Play tarafından toplanır ve geliştiriciye kimliğiniz olmadan gösterilir. Uygulama en çok dört ayda bir Google
+    Play'in kendi değerlendirme penceresini isteyebilir; verdiğiniz puan ve yorum doğrudan Google Play'e gider, uygulama
+    bunları görmez.</li>
   </ul>
 
   <h2>Verilerinizin silinmesi</h2>
   <p>Okumaları Geçmiş ekranından, sayaçları Ayarlar → Sayaçlarım'dan silebilirsiniz. Uygulamayı kaldırdığınızda
   telefondaki tüm verileri silinir. Google yedeğini telefonunuzun ayarlarından ya da Google hesabınızdan
-  silebilirsiniz. Geliştiricide sizinle ilgili bir kayıt bulunmadığından ayrıca silinecek bir veri yoktur.</p>
+  silebilirsiniz. Geliştiriciye e-posta yazmadıysanız geliştiricide sizinle ilgili bir kayıt yoktur; yazdıysanız
+  e-postanızın silinmesini aynı adresten isteyebilirsiniz.</p>
 
   <h2>KVKK kapsamında aydınlatma</h2>
   <p>6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesi uyarınca:</p>
   <ul>
     <li><strong>Veri sorumlusu:</strong> Mertcan Sezginer (<a class="eposta" data-k="pikatzag" data-a="moc.liamg">gaztakip [at] gmail.com</a>).</li>
     <li><strong>İşlenen veriler ve amaç:</strong> Yukarıdaki tabloda yazan bilgiler, uygulamanın size tüketim ve
-    fatura tahmini sunması, il ve ilçenizin bulunması ve uygulamanın reklamlarla ücretsiz sunulabilmesi amacıyla
-    işlenir. Sayaç okumalarınız yalnız telefonunuzda, sizin kullanımınız için işlenir; geliştirici bunlara erişmez.</li>
+    fatura tahmini sunması, il ve ilçenizin bulunması, geri bildirim e-postalarınıza yanıt verilmesi ve uygulamanın
+    reklamlarla ücretsiz sunulabilmesi amacıyla işlenir. Sayaç okumalarınız yalnız telefonunuzda, sizin kullanımınız için işlenir; geliştirici bunlara erişmez.</li>
     <li><strong>Hukuki sebepler:</strong> Konum için açık rızanız (konum iznini vermeniz ve "Konumumu kullan"
-    düğmesine dokunmanız). Kişiselleştirilmemiş reklamlar ve rakam okuma bileşeninin tanılama bilgisi için,
-    uygulamanın ücretsiz sunulması ve düzgün çalışması amacıyla veri sorumlusunun meşru menfaati (KVKK m. 5/2-f);
+    düğmesine dokunmanız). Kişiselleştirilmemiş reklamlar, rakam okuma bileşeninin tanılama bilgisi ve geri bildirim
+    e-postaları için, uygulamanın ücretsiz sunulması, düzgün çalışması ve size yanıt verilebilmesi amacıyla veri
+    sorumlusunun meşru menfaati (KVKK m. 5/2-f);
     Avrupa'daki kullanıcılar için ayrıca onay formundaki seçiminiz.</li>
     <li><strong>Aktarım:</strong> Yaklaşık konum, rakam okuma tanılama bilgisi ve reklam verileri, ilgili hizmetleri
     sağlayan Google LLC'ye ve bağlı şirketlerine aktarılır; bu şirketlerin sunucuları yurt dışındadır. Aktarım, bu
     hizmetlerin çalışması için gereklidir ve Google'ın veri koruma koşullarına tabidir. Konum aktarımı yalnız siz
     "Konumumu kullan" dediğinizde yapılır; il ve ilçeyi listeden seçerek uygulamayı konum aktarımı olmadan
-    kullanabilirsiniz. Veriler başka hiçbir üçüncü kişiye aktarılmaz ve satılmaz.</li>
+    kullanabilirsiniz. Geri bildirim e-postaları geliştiricinin Gmail hesabında (Google) saklanır. Veriler başka hiçbir
+    üçüncü kişiye aktarılmaz ve satılmaz.</li>
     <li><strong>Toplama yöntemi:</strong> Uygulamaya girdiğiniz ya da kamerayla okuttuğunuz bilgiler, otomatik
-    olarak telefonunuzda; yukarıda sayılan Google bileşenleri aracılığıyla elektronik ortamda.</li>
+    olarak telefonunuzda; yukarıda sayılan Google bileşenleri aracılığıyla ve kendi gönderdiğiniz geri bildirim
+    e-postasıyla elektronik ortamda.</li>
     <li><strong>Haklarınız (KVKK m. 11):</strong> Kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse
     bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, aktarıldığı üçüncü
     kişileri bilme, eksik ya da yanlış işlenmişse düzeltilmesini, silinmesini ya da yok edilmesini isteme, itiraz
